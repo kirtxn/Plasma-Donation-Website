@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class ="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="164" height="61" viewBox="0 0 164 61">
+                <text id="Yogdan" transform="translate(0 49)" fill="red" font-size="40" font-family="CoolveticaRg-Regular, Coolvetica"><tspan x="0" y="0">Y</tspan><tspan y="0" fill="#000">ogdan</tspan></text>
+              </svg>
+                
+        </div>
+        <ul id="menuList">
+            <li><a href="">Home</a></li>
+            <li><a href="">Donor</a></li>
+            <li><a href="">Patient</a></li>
+            <li><a href="">Blog</a></li>
+        </ul>
+    </nav>
+    <img id="ham" src="https://img.icons8.com/ios-filled/50/000000/menu--v4.png" onclick="togglemenu()"/>
+   
+    <section>
+        
+        <div class="box">
+            <svg id="eng" xmlns="http://www.w3.org/2000/svg" width="864" height="174" viewBox="0 0 864 174">
+                <text id="Recovered_from_covid-19_Donate_Plasma." data-name="Recovered from covid-19?
+              Donate Plasma." transform="translate(432 59)" fill="#fff" font-size="60" font-family="SourceCodePro-Regular, Source Code Pro"><tspan x="-432" y="0">RECOVERED FROM COVID-19?</tspan><tspan font-size="85" font-family="TrebuchetMS-Bold, Trebuchet MS" font-weight="700"><tspan x="-306.361" y="96">Donate </tspan><tspan y="96" fill="red">Plasma.</tspan></tspan></text>
+              </svg>
+              
+            <img src = "./images/konkani.png" id="kok" alt = "Test Image" />
+            <a href="donor.html" class="myButton">Donate</a>
+            <a href="#" class="myButton">Patient</a>
+        </div>
+    
+    </section>
+    
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function togglemenu(){
+
+            if(menuList.style.maxHeight =="0px")
+            {
+                menuList.style.maxHeight ="300px";
+            }
+            else{
+                menuList.style.maxHeight ="0px";
+            }
+
+        }
+    </script>
+
+</body>
+</html>

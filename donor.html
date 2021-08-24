@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/donor.css">
+    <title>Donor Form</title>
+</head>
+<body>
+     <div class="main">
+       <div class="register">
+           <h2 id="heading">Donor Registration Form</h2>
+           <form id="register" method="post">
+               <div class="input-field"> 
+               <label> Name: </label>
+               <br>
+               <input type="text" name="name" id="name" placeholder="Enter Your Name">
+               <br><br>
+                </div>
+               
+                <div class="input-field"> 
+               <label>Your Age: </label>
+               <br>
+               <input type="number" name="age" id="name" placeholder="Enter Your Age">
+                <br><br>
+            </div>
+                
+            <div class="input-field"> 
+                <label>Your Email ID: </label>
+                <br>
+                <input type="email" name="email" id="name" placeholder="Enter Your Valid Email ID">
+                <br><br>
+            </div>
+                
+            <div class="input-field"> 
+                <label>Gender: </label>
+                 <br>
+                 &nbsp;&nbsp;&nbsp;
+                 <input type="radio" name="gender" id="male">
+                 &nbsp;
+                 <span id="male">Male</span>
+                 &nbsp;&nbsp;&nbsp;&nbsp;
+                 <input type="radio" name="gender" id="female">
+                &nbsp;
+                <span id="male">Female</span>
+                <br><br>
+            </div>
+                    
+                    
+            <div class="input-field"> 
+                <label>Your Mobile Number: </label>
+               <br>
+               <input type="number" name="phone" id="name" placeholder="Enter Your number">
+                <br><br>
+            </div>
+                
+            <div class="input-field"> 
+                <label>Did your ever test Positive for COVID-19: </label>
+               <br>
+               &nbsp;&nbsp;&nbsp;
+               <input type="checkbox" name="covid" id="plasma" >
+               &nbsp;
+               <span id="pos">Yes</span>
+               &nbsp;&nbsp;&nbsp;&nbsp;
+               <input type="checkbox" name="covid" id="plasma" >
+               &nbsp;
+               <span id="neg">NO</span>
+               &nbsp;
+                <br><br>
+            </div>
+
+            <div class="input-field"> 
+                <label>When Did You Test Positive for Covid? </label>
+               <br>
+               <input type="date" name="date" id="name" >
+                <br><br>
+
+                <label>When Did You Recover? </label>
+               <br>
+               <input type="date" name="date" id="name" >
+                <br><br>
+            </div>
+
+            <div class="input-field"> 
+                <label>Do you Consume Alcohol?: </label>
+               <br>
+               &nbsp;&nbsp;&nbsp;
+               <input type="checkbox" name="covid" id="alc" >
+               &nbsp;
+               <span id="pos">Yes</span>
+               &nbsp;&nbsp;&nbsp;&nbsp;
+               <input type="checkbox" name="covid" id="alc" >
+               &nbsp;
+               <span id="neg">No</span>
+               &nbsp;
+                <br><br>
+            </div>
+
+            <div class="input-field"> 
+                <label>Do you Have Adhaar card?: </label>
+               <br>
+               &nbsp;&nbsp;&nbsp;
+               <input type="checkbox" name="covid" id="adh" >
+               &nbsp;
+               <span id="pos">Yes</span>
+               &nbsp;&nbsp;&nbsp;&nbsp;
+               <input type="checkbox" name="covid" id="adh" >
+               &nbsp;
+               <span id="neg">No</span>
+               &nbsp;
+                <br><br>
+            </div>
+
+            <div class="input-field"> 
+
+                <label>Do you have COVID-19 Negative Report?: </label>
+               <br>
+               &nbsp;&nbsp;&nbsp;
+               <input type="checkbox" name="covid" id="negrep" >
+               &nbsp;
+               <span id="pos">Yes</span>
+               &nbsp;&nbsp;&nbsp;&nbsp;
+               <input type="checkbox" name="covid" id="negrep" >
+               &nbsp;
+               <span id="neg">No</span>
+               &nbsp;
+                <br><br>
+            </div>
+
+            <div class="input-field"> 
+                <label>Do your Have any of the Following Diseases?: </label>
+               <br>
+               &nbsp;&nbsp;&nbsp;
+               <input type="checkbox" name="covid" id="bp" >
+               &nbsp;
+               <span id="pos">Blood Pressure</span>
+               &nbsp;&nbsp;&nbsp;&nbsp;
+               <input type="checkbox" name="covid" id="db" >
+               &nbsp;
+               <span id="neg">Diabetes</span>
+               &nbsp;
+                <br><br>
+                <input type="submit" value="Submit"  name="submit" id="submit" >
+            </div>
+
+            
+
+                </form>
+
+       </div>  
+
+     </div>
+     
+     <div id="popup-box">
+
+        <div class="top-bar">
+
+            <button onclick="close_modal()" id="close-button">X</button>
+
+        </div>
+
+        <div class="content">
+
+            <center>
+
+                <h2 id="guide">
+
+                    Guidelines for Covid Plasma Donation
+
+                </h2>
+
+            </center>
+
+            <p>
+
+                1)	Age should be between 18 to 60 years.<br>
+2)	Male and Naulliparous Females<br>
+3)	Weight should be more than 55 Kg.<br>
+4)	Should be tested Positive for Covid.<br>
+5)	Should be recovered for more than 28 Days and from all<br> symptoms of Covid<br>
+6)	If Vaccinated 14 days after receiving the dose of the<br> vaccine provided donor is initially positive for covid<br>
+7)	All other criteria which apply for routine blood<br> Donations would also be applicable <br>at the time of screening the donor<br>
+8)	Prospective donors should report to the blood bank at 9:30<br> Am on working days so as to enable sufficient time for screening and procedures.<br>
+
+
+            </p>
+
+        </div>
+
+    </div>
+<script>
+    setTimeout(show_modal, 10);
+// auto close modal after 6 sec
+// call the fucntion after 6 sec
+setTimeout(close_modal, 6000000);
+// so modal will stay 3 sec 
+ function show_modal(){
+ 	 var popup_box = document.getElementById('popup-box');
+ 	 popup_box.style.display = "block";
+ }
+ function close_modal(){
+ 	 var popup_box = document.getElementById('popup-box');
+ 	 popup_box.style.display = "none";
+ }
+</script>>
+     
+        
+</body>
+</html>
